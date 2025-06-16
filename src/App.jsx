@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { onAuthStateChanged, signOut } from "Firebase/auth";
-import { auth,db } from "./Components/Firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth,db } from "./Components/firebase";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { MdModeEdit } from "react-icons/md";
 import { AiFillDelete } from "react-icons/ai";
 import Navbar from "./components/Navbar";
-import { collection, addDoc, onSnapshot, doc, deleteDoc, updateDoc, query, where } from "Firebase/firestore";
+import { collection, addDoc, onSnapshot, doc, deleteDoc, updateDoc, query, where } from "firebase/firestore";
 
 function App() {
   const [user, setUser] = useState(null);

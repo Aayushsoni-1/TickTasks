@@ -1,6 +1,6 @@
-import { signInWithEmailAndPassword } from "Firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { auth } from "./Firebase";
+import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -12,7 +12,7 @@ function Login() {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, pass);
-      // Firebase checks credentials, logs the user in, and persists the session.
+      // firebase checks credentials, logs the user in, and persists the session.
       navigate("/");
     } catch (error) {
       alert("❌ " + error.message);

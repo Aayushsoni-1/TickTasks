@@ -1,6 +1,6 @@
-import { createUserWithEmailAndPassword } from "Firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { auth } from "./Firebase";
+import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
@@ -12,7 +12,7 @@ function Signup() {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, pass);    
-      // this code registers a user using Firebase. Firebase stores the credentials securely and returns user metadata.
+      // this code registers a user using firebase. firebase stores the credentials securely and returns user metadata.
       navigate("/");
     } catch (error) {
       alert("❌ " + error.message);

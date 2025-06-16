@@ -1,6 +1,6 @@
 import React from 'react'
-import { onAuthStateChanged, signOut } from "Firebase/auth";
-import { auth } from "./Firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth } from "./firebase";
 
 
 
