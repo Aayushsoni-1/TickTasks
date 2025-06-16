@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { MdModeEdit } from "react-icons/md";
 import { AiFillDelete } from "react-icons/ai";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import { collection, addDoc, onSnapshot, doc, deleteDoc, updateDoc, query, where } from "firebase/firestore";
 
 function App() {
