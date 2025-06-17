@@ -66,6 +66,8 @@ Open your browser at [http://localhost:5173](http://localhost:5173).
 
 This application uses **Firebase Authentication** for user sign-up and login, and **Cloud Firestore** for real-time data storage.
 
+
+
 ✅ **Firebase Auth** — for securing routes and managing users.  
 ✅ **Cloud Firestore** — for adding, retrieving, and updating tasks in real time.
 
