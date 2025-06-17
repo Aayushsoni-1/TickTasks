@@ -7,7 +7,7 @@ export default defineConfig({
     react(), 
     tailwindcss()
   ],
-  base: '/',
+  base: process.env.VITE_BASE_PATH || /TickTasks,
   build: {
     outDir: 'dist'
   },
