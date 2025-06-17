@@ -86,6 +86,32 @@ VITE_MESSAGING_SENDER_ID=your_sender_id
 VITE_APP_ID=your_app_id
 ```
 
+Alternate change the Firebase.js accordingly!
+1️⃣ Create a Firebase Project
+
+If you haven't already, create a new project in [Firebase Console](https://console.firebase.google.com/).
+
+---
+
+### 2️⃣ Retrieve Your Firebase Config
+
+- Select **Project settings** (gear icon).
+- Scroll down to **Your apps**.
+- Select or add a new **Web App**.
+- You'll see your **Firebase config object**:
+
+```javascript
+const firebaseConfig = {
+  apiKey: "your_api_key",
+  authDomain: "your_project_id.firebaseapp.com",
+  projectId: "your_project_id",
+  storageBucket: "your_project_id.appspot.com",
+  messagingSenderId: "your_sender_id",
+  appId: "your_app_id",
+  measurementId: "your_measurement_id"
+};
+
+
 ---
 ---
 
